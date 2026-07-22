@@ -1,0 +1,105 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-olive: var(--olive);
+  --color-grid: var(--grid-line);
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --background: #121212;
+  --foreground: #F5EDE8;
+  --card: #1E1A18;
+  --card-foreground: #F5EDE8;
+  --popover: #1E1A18;
+  --popover-foreground: #F5EDE8;
+  --primary: #E07A5F;
+  --primary-foreground: #121212;
+  --secondary: #2A2420;
+  --secondary-foreground: #F5EDE8;
+  --muted: #2A2420;
+  --muted-foreground: #B8A99E;
+  --accent: #E8B84C;
+  --accent-foreground: #121212;
+  --destructive: #C8553D;
+  --destructive-foreground: #F5EDE8;
+  --border: rgba(245, 237, 232, 0.1);
+  --input: rgba(245, 237, 232, 0.12);
+  --ring: #E07A5F;
+  --olive: #4A6B5D;
+  --grid-line: rgba(224, 122, 95, 0.06);
+}
+
+.dark {
+  --background: #121212;
+  --foreground: #F5EDE8;
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-primary); color: white; }
+}
+
+@utility blueprint-grid {
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@utility warm-glow {
+  box-shadow: 0 0 40px -10px color-mix(in oklab, var(--primary) 50%, transparent);
+}
+
+@keyframes reveal-draft {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes float-cutout {
+  0%, 100% { transform: translateY(0) rotate(var(--r, -1deg)); }
+  50% { transform: translateY(-10px) rotate(calc(var(--r, -1deg) + 2deg)); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-reveal { animation: reveal-draft 1.2s var(--ease-out-expo) both; }
+.animate-float { animation: float-cutout 6s ease-in-out infinite; }
+.animate-fade-up { animation: fade-up 0.8s var(--ease-out-expo) both; }
