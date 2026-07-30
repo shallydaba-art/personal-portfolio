@@ -2,98 +2,98 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, useRef } from "react";
 
 // ── Addis Aesthetic Series (all 36 photos) ─────────────────────────────────
-import addisP1  from "@/assets/addis_photo_1.jpg";
-import addisP2  from "@/assets/addis_photo_2.jpg";
-import addisP3  from "@/assets/addis_photo_3.jpg";
-import addisP4  from "@/assets/addis_photo_4.jpg";
-import addisP5  from "@/assets/addis_photo_5.jpg";
-import addisP6  from "@/assets/addis_photo_6.jpg";
-import addisP7  from "@/assets/addis_photo_7.jpg";
-import addisP8  from "@/assets/addis_photo_8.jpg";
-import addisP9  from "@/assets/addis_photo_9.jpg";
-import addisP10 from "@/assets/addis_photo_10.jpg";
-import addisP11 from "@/assets/addis_photo_11.jpg";
-import addisP12 from "@/assets/addis_photo_12.jpg";
-import addisP13 from "@/assets/addis_photo_13.jpg";
-import addisP14 from "@/assets/addis_photo_14.jpg";
-import addisP15 from "@/assets/addis_photo_15.jpg";
-import addisP16 from "@/assets/addis_photo_16.jpg";
-import addisP17 from "@/assets/addis_photo_17.jpg";
-import addisP18 from "@/assets/addis_photo_18.jpg";
-import addisP19 from "@/assets/addis_photo_19.jpg";
-import addisP20 from "@/assets/addis_photo_20.jpg";
-import addisP21 from "@/assets/addis_photo_21.jpg";
-import addisP22 from "@/assets/addis_photo_22.jpg";
-import addisP23 from "@/assets/addis_photo_23.jpg";
-import addisP24 from "@/assets/addis_photo_24.jpg";
-import addisP25 from "@/assets/addis_photo_25.jpg";
-import addisP26 from "@/assets/addis_photo_26.jpg";
-import addisP27 from "@/assets/addis_photo_27.jpg";
-import addisP28 from "@/assets/addis_photo_28.jpg";
-import addisP29 from "@/assets/addis_photo_29.jpg";
-import addisP30 from "@/assets/addis_photo_30.jpg";
-import addisP31 from "@/assets/addis_photo_31.jpg";
-import addisP32 from "@/assets/addis_photo_32.jpg";
-import addisP33 from "@/assets/addis_photo_33.jpg";
-import addisP34 from "@/assets/addis_photo_34.jpg";
-import addisP35 from "@/assets/addis_photo_35.jpg";
-import addisP36 from "@/assets/addis_photo_36.jpg";
+const addisP1 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415881/addis_photo_1_xymagu.jpg";
+const addisP2 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415904/addis_photo_2_ous3ey.jpg";
+const addisP3 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415924/addis_photo_3_zzi1zl.jpg";
+const addisP4 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415911/addis_photo_4_obucug.jpg";
+const addisP5 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415922/addis_photo_5_j7dmdw.jpg";
+const addisP6 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415942/addis_photo_6_d39kgk.jpg";
+const addisP7 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415962/addis_photo_7_evr0m8.jpg";
+const addisP8 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415991/addis_photo_8_zootkn.jpg";
+const addisP9 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415968/addis_photo_9_lbgjtr.jpg";
+const addisP10 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416022/addis_photo_10_gmpfi1.jpg";
+const addisP11 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416061/addis_photo_11_o5rvmx.jpg";
+const addisP12 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416165/addis_photo_12_pdtczp.jpg";
+const addisP13 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416080/addis_photo_13_bccfgp.jpg";
+const addisP14 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416174/addis_photo_14_cqyras.jpg";
+const addisP15 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416180/addis_photo_15_xwsrzh.jpg";
+const addisP16 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416119/addis_photo_16_ydkeyb.jpg";
+const addisP17 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416203/addis_photo_17_qnvqqh.jpg";
+const addisP18 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416218/addis_photo_18_k4c3b3.jpg";
+const addisP19 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415846/addis_photo_19_q3scah.jpg";
+const addisP20 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415918/addis_photo_20_rnygwo.jpg";
+const addisP21 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415905/addis_photo_21_rwcibd.jpg";
+const addisP22 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415919/addis_photo_22_eaz5aj.jpg";
+const addisP23 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416067/addis_photo_23_ndcwrj.jpg";
+const addisP24 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416011/addis_photo_24_uxlqdi.jpg";
+const addisP25 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785415972/addis_photo_25_atg4y5.jpg";
+const addisP26 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416064/addis_photo_26_mcjeuo.jpg";
+const addisP27 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416049/addis_photo_27_bwkjsu.jpg";
+const addisP28 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416057/addis_photo_28_dnnqxt.jpg";
+const addisP29 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416082/addis_photo_29_rlkmqc.jpg";
+const addisP30 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416153/addis_photo_30_vo5he9.jpg";
+const addisP31 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416152/addis_photo_31_lwckmf.jpg";
+const addisP32 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416213/addis_photo_32_kpl8cy.jpg";
+const addisP33 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416249/addis_photo_33_sr5hnk.jpg";
+const addisP34 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416221/addis_photo_34_qlmzns.jpg";
+const addisP35 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416242/addis_photo_35_d6doc4.jpg";
+const addisP36 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416218/addis_photo_36_j6tgwt.jpg";
 
 // ── CAWWE Women's Empowerment ────────────────────────────────────────────────
-import cawweP1 from "@/assets/all/CAWWE Women's Empowerment/IMG_9250.JPG";
-import cawweP2 from "@/assets/all/CAWWE Women's Empowerment/IMG_9526.JPG";
-import cawweP3 from "@/assets/all/CAWWE Women's Empowerment/IMG_9583.JPG";
-import cawweP4 from "@/assets/all/CAWWE Women's Empowerment/IMG_9639.JPG";
-import cawweCover from "@/assets/cawwe_cover.jpg";      // IMG_9656.JPG (also in all/ folder)
-import cawweP6 from "@/assets/all/CAWWE Women's Empowerment/IMG_9780.JPG";
-import cawweP7 from "@/assets/all/CAWWE Women's Empowerment/IMG_9818.jpg";
+const cawweP1 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785417331/IMG_9250_an6s8h.jpg";
+const cawweP2 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785417248/IMG_9526_ris5an.jpg";
+const cawweP3 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785417333/IMG_9583_dtginu.jpg";
+const cawweP4 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785417210/IMG_9639_ktoho3.jpg";
+const cawweCover = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416420/cawwe_cover_lcqgay.jpg";      // IMG_9656.JPG (also in all/ folder)
+const cawweP6 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785417371/IMG_9780_rk77yv.jpg";
+const cawweP7 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416836/IMG_9818_tkjd7n.jpg";
 
 // ── Portrait Sketches (all browser-compatible files) ──────────────────────
-import sketchPN1  from "@/assets/IMG_9823.png";         // IMG_9823.PNG
-import sketchPN2  from "@/assets/IMG_9825.png";         // IMG_9825.PNG
-import sketchPN3  from "@/assets/img_1117_2.png";       // IMG_1117 (2).PNG
-import sketchPN4  from "@/assets/img_5097.jpg";         // IMG_5097.JPG
-import sketchP1   from "@/assets/sketch_photo_1.jpg";
-import sketchP2   from "@/assets/sketch_photo_2.jpg";
-import sketchP3   from "@/assets/sketch_photo_3.jpg";
-import sketchP4   from "@/assets/sketch_photo_4.jpg";
-import sketchP5   from "@/assets/sketch_photo_5.jpg";
-import sketchP6   from "@/assets/sketch_photo_6.jpg";
-import sketchP7   from "@/assets/sketch_photo_7.jpg";
-import sketchP8   from "@/assets/sketch_photo_8.jpg";
-import sketchP9   from "@/assets/sketch_photo_9.jpg";
-import sketchP10  from "@/assets/sketch_photo_10.jpg";
-import sketchP11  from "@/assets/sketch_photo_11.jpg";
-import sketchP12  from "@/assets/sketch_photo_12.jpg";
-import sketchP13  from "@/assets/sketch_photo_13.jpg";
-import sketchP14  from "@/assets/sketch_photo_14.jpg";
-import sketchP15  from "@/assets/sketch_photo_15.jpg";
-import sketchP16  from "@/assets/sketch_photo_16.jpg";
-import sketchPMain from "@/assets/sketch_photo_main.jpg"; // photo_2026-07-14_15-02-32
-import sketchPJul  from "@/assets/sketch_photo_jul16.jpg"; // photo_2026-07-16_16-56-42
+const sketchPN1 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416414/IMG_9823_smb1kg.jpg";         // IMG_9823.PNG
+const sketchPN2 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416325/IMG_9825_vvvpxm.jpg";         // IMG_9825.PNG
+const sketchPN3 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416360/img_1117_2_ulhjcp.jpg";       // IMG_1117 (2).PNG
+const sketchPN4 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416329/img_5097_ivviq4.jpg";         // IMG_5097.JPG
+const sketchP1 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416453/sketch_photo_1_kdmrqx.jpg";
+const sketchP2 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416413/sketch_photo_2_udyc3n.jpg";
+const sketchP3 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416418/sketch_photo_3_uokzdt.jpg";
+const sketchP4 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416433/sketch_photo_4_qvpujt.jpg";
+const sketchP5 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416420/sketch_photo_5_ebmw9t.jpg";
+const sketchP6 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416423/sketch_photo_6_hu8ibf.jpg";
+const sketchP7 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416459/sketch_photo_7_jur1rj.jpg";
+const sketchP8 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416450/sketch_photo_8_emkrrr.jpg";
+const sketchP9 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416471/sketch_photo_9_w5nep0.jpg";
+const sketchP10 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416501/sketch_photo_10_qqvgsw.jpg";
+const sketchP11 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416543/sketch_photo_11_rxlbrv.jpg";
+const sketchP12 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416561/sketch_photo_12_t7lzan.jpg";
+const sketchP13 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416563/sketch_photo_13_jzckcl.jpg";
+const sketchP14 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416507/sketch_photo_14_esreia.jpg";
+const sketchP15 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416496/sketch_photo_15_xbqtmf.jpg";
+const sketchP16 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416544/sketch_photo_16_e2xsa7.jpg";
+const sketchPMain = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416559/sketch_photo_main_t3chtz.jpg"; // photo_2026-07-14_15-02-32
+const sketchPJul = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416529/sketch_photo_jul16_xxc4ih.jpg"; // photo_2026-07-16_16-56-42
 
 // ── Live Media Production ─────────────────────────────────────────────────
-import mediaVideo from "@/assets/IMG_7477.mov";       // IMG_7477.MOV (hover play)
-import mediaI1    from "@/assets/IMG_9826.png";
-import mediaI2    from "@/assets/IMG_9827.png";
-import mediaI3    from "@/assets/IMG_9828.png";
-import mediaI4    from "@/assets/IMG_9829.png";
-import mediaI5    from "@/assets/IMG_9831.png";
-import mediaI6    from "@/assets/IMG_9832.png";
-import mediaI7    from "@/assets/photo_live_1.jpg";
+const mediaVideo = "https://res.cloudinary.com/v2fsmrq5/video/upload/v1785437463/IMG_7477_zkjmxp.mp4";       // IMG_7477.MOV (hover play)
+const mediaI1 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416377/IMG_9826_wpxgdo.jpg";
+const mediaI2 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416421/IMG_9827_jdusxb.jpg";
+const mediaI3 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416373/IMG_9828_ccke0b.jpg";
+const mediaI4 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416379/IMG_9829_e9qgbo.jpg";
+const mediaI5 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416428/IMG_9831_xr91tu.jpg";
+const mediaI6 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416398/IMG_9832_eirwgn.jpg";
+const mediaI7 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416411/photo_live_1_vhmayq.jpg";
 
 // ── CV and Certification ──────────────────────────────────────────────────
-import cvResume  from "@/assets/cv_resume.png";
-import cvDownload from "@/assets/all/cv and certificate/ELSHALOM.D CV Resume.pdf (1).png";
-import cvAdobe   from "@/assets/cv_adobe.jpg";
-import cvExcel   from "@/assets/cv_excel_adv.jpg";
-import cvC1      from "@/assets/cv_c1.jpg";
-import cvC2      from "@/assets/cv_c2.jpg";
-import cvC3      from "@/assets/cv_c3.jpg";
-import cvCapcut  from "@/assets/cv_capcut.jpg";
-import cvMsExcel from "@/assets/cv_msexcel.jpg";
-import cvCanva   from "@/assets/cv_canva.jpg";
-import cvUiux    from "@/assets/cv_uiux.jpg";
+const cvResume = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416332/cv_resume_rrwgox.png";
+const cvDownload = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785437773/ELSHALOM.D_CV_Resume.pdf_1_abfx6s.png";
+const cvAdobe = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416244/cv_adobe_q9cnss.jpg";
+const cvExcel = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416266/cv_excel_adv_xxtq4k.jpg";
+const cvC1 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416251/cv_c1_egolbq.jpg";
+const cvC2 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416244/cv_c2_euwtjd.jpg";
+const cvC3 = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416283/cv_c3_pivwm6.jpg";
+const cvCapcut = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416275/cv_capcut_fpxc9p.jpg";
+const cvMsExcel = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416287/cv_msexcel_lzgsfs.jpg";
+const cvCanva = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416277/cv_canva_vhwqfm.jpg";
+const cvUiux = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416317/cv_uiux_u0j2cs.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

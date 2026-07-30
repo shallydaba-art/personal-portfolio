@@ -30,3 +30,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# User requested ignores
+shally portfolio/
+shally portfolio.zip
+.agents/skills/humanizer-zh/
+.agents
