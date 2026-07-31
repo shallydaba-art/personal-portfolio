@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+"use client";
 import { useState, useRef } from "react";
 
 // ── Addis Aesthetic Series (all 36 photos) ─────────────────────────────────
@@ -95,17 +95,7 @@ const cvMsExcel = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416287/
 const cvCanva = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416277/cv_canva_vhwqfm.jpg";
 const cvUiux = "https://res.cloudinary.com/v2fsmrq5/image/upload/v1785416317/cv_uiux_u0j2cs.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Elshalom Daba — Data Analyst & Visual Storyteller" },
-      { name: "description", content: "Portfolio of Elshalom Daba — Data analyst, photographer, and media producer in Addis Ababa." },
-      { property: "og:title", content: "Elshalom Daba — Portfolio" },
-      { property: "og:description", content: "I analyze data, take photos, and produce media. Check out my work." },
-    ],
-  }),
-  component: Index,
-});
+
 
 type Category = "All" | "NGO Work" | "Photography" | "Media" | "Art" | "Documents";
 
@@ -284,7 +274,7 @@ function ProjectCard({ p, i, onClick }: { p: Project; i: number; onClick: () => 
   );
 }
 
-function Index() {
+export default function Index() {
   const [filter, setFilter] = useState<Category>("All");
   const [skillTab, setSkillTab] = useState<keyof typeof skills>("Professional");
   const [openProject, setOpenProject] = useState<Project | null>(null);
