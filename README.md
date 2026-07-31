@@ -30,9 +30,8 @@ I spend time every week teaching and mentoring children.
 ## How I Built This
 
 I built this portfolio using a modern web stack:
-- **React 19 & TanStack Start:** For the frontend components and routing.
+- **Next.js:** For the frontend components and routing.
 - **Tailwind CSS v4 & Radix UI:** For styling and accessible UI elements.
-- **Vite:** To build and run the project quickly.
 
 To run it locally:
 ```bash
