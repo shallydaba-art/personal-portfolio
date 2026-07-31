@@ -1,78 +1,50 @@
-# Shallydaba-art | Personal Portfolio & CV
+# Elshalom Daba | Portfolio & CV
 
-Welcome to my personal portfolio repository! This project not only showcases my work as an artist and developer but also serves as a living, interactive version of my curriculum vitae (CV).
+This is my personal portfolio. I'm a data analyst, photographer, and media producer based in Addis Ababa, and I built this site to share my work. 
 
 ## About Me
 
-I am a passionate creative merging the worlds of art and technology. My work focuses on building beautiful, highly interactive, and performant web experiences. I love creating digital products that are not just functional, but also visually stunning.
-
-## Tech Stack & Architecture
-
-This portfolio is built using a modern, cutting-edge web development stack, carefully chosen for optimal performance, developer experience, and scalability:
-
-### Core Frameworks & Libraries
-- **[React 19](https://react.dev/)**: The foundation of the user interface, utilizing the latest React features.
-- **[TanStack Start](https://tanstack.com/start/latest)**: A full-stack React framework powered by TanStack Router and TanStack Query, offering phenomenal routing, SSR capabilities, and state management.
-- **[TypeScript](https://www.typescriptlang.org/)**: Ensures type safety across the entire codebase, reducing bugs and improving maintainability.
-
-### Styling & UI Architecture
-- **[Tailwind CSS v4](https://tailwindcss.com/)**: A utility-first CSS framework used for rapid, consistent, and highly customizable styling.
-- **[Radix UI](https://www.radix-ui.com/)**: Unstyled, accessible component primitives that serve as the foundation for the design system.
-- **Animations**: Powered by `tw-animate-css` and custom CSS for smooth, fluid user experiences.
-- **Icons**: Beautiful and consistent iconography provided by **[Lucide React](https://lucide.dev/)**.
-
-### Forms & Validation
-- **[React Hook Form](https://react-hook-form.com/)**: Performant, flexible, and extensible forms with easy-to-use validation.
-- **[Zod](https://zod.dev/)**: TypeScript-first schema declaration and validation, tightly integrated with the forms.
-
-### Tooling & Ecosystem
-- **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling providing an extremely fast development environment and optimized production builds.
-- **[ESLint & Prettier](https://eslint.org/)**: Configured for strict code quality, consistent formatting, and maintaining high standards across the codebase.
+I graduated from Unity University with a BSc in Computer Science in April 2026. Right now, I work as a Program Officer at CAWEE. My background mixes technical skills—like data analysis and programming—with creative work in photography and live media production.
 
 ## Experience
 
-*(Note: Replace with your actual experience details)*
+### Program Officer, CAWEE
+*April 2026 — Present*
+I manage data analysis, coordinate field operations, and represent the organization to support our women's economic empowerment programs. Before taking this role, I volunteered here to help organize their datasets.
 
-### [Current Role / Freelance Artist & Developer]
-*Year - Present*
-- Designed and developed immersive web experiences.
-- Created digital artworks, branding, and interactive portfolios.
-- Collaborated with clients to translate their vision into engaging digital products.
+### Media Team Volunteer, Local Church
+*Ongoing*
+Twice a week, I run the media team. I handle live camera operation, sound systems, screen control, and video editing.
 
-### [Previous Role]
-*Year - Year*
-- [Key achievement or responsibility]
-- [Key achievement or responsibility]
+### Volunteer, Hold My Hand (HMH) Charity
+*Weekly*
+I spend time every week teaching and mentoring children.
 
 ## Skills
 
-- **Development**: TypeScript, React, Next.js / TanStack Start, Node.js, HTML5, CSS3, Tailwind CSS
-- **Design & Art**: UI/UX Design, Digital Illustration, Animation, Wireframing (Figma, Adobe Creative Suite)
-- **Other**: Git, Vercel, Responsive Web Design, Web Accessibility (a11y)
+- **Professional:** Data Analysis, Data Visualization, NGO Program Coordination, Field Work, Report Writing, Microsoft Office Suite, Java, C++, SQL, JavaScript
+- **Creative:** Aesthetic Photography, Portrait Photography, Video Editing, Sound System Management, Live Camera Control, Canva Design, Pencil Portraiture
+- **Soft Skills:** Problem Solving, Team Leadership, Adaptability, Communication, Persuasive Speaking, Empathy
+- **Languages:** English (C1-C2), Amharic (C1-C2), French (B1)
 
-## Running the Project Locally
+## How I Built This
 
-If you'd like to explore the codebase or run the portfolio locally:
+I built this portfolio using a modern web stack:
+- **React 19 & TanStack Start:** For the frontend components and routing.
+- **Tailwind CSS v4 & Radix UI:** For styling and accessible UI elements.
+- **Vite:** To build and run the project quickly.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/shallydaba-art/personal-portfolio.git
-   ```
-2. **Install dependencies:**
-   ```bash
-   npm install
-   # or yarn/pnpm install
-   ```
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-4. **Open your browser** and navigate to `http://localhost:3000` (or the port provided by Vite).
+To run it locally:
+```bash
+git clone https://github.com/shallydaba-art/personal-portfolio.git
+npm install
+npm run dev
+```
 
-## 📫 Contact
+## Contact
 
-- GitHub: [@shallydaba-art](https://github.com/shallydaba-art)
-- Portfolio: [Insert link if hosted]
-- Email: [Insert your email]
-
----
+- **Email:** elshalomdaba@gmail.com
+- **Phone:** +251 904 957 010
+- **Location:** Bole, Addis Ababa, ETH
+- **Instagram:** [@venecia_her_316](https://instagram.com/venecia_her_316)
+- **GitHub:** [@shallydaba-art](https://github.com/shallydaba-art)
